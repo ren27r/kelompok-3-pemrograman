@@ -5,7 +5,7 @@ Pendahuluan: Aplikasi Pengelolaan Nilai Siswa ini adalah program Python yang dib
 Fitur Utama:
 -Input data siswa (nama, nilai tugas, nilai ujian)
 -Menghitung rata-rata nilai
--Penentuan grade secara otomatis (A–E)
+-Penentuan grade secara otomatis (A–D)
 -Menampilkan seluruh data siswa
 -Menyimpan dan keluar dari program
 
@@ -14,7 +14,7 @@ Panduan Instalasi :
 -Buka Visual Studio Code
 -Buka Folder tempat yang di inginkan untuk menyimpan repositori 
 -Buka Terminal pada VsCode 
--kemudian ketik ''git clone https://github.com/ren27r/kelompok-3-pemrograman" di terminal.
+-kemudian ketik "git clone https://github.com/ren27r/kelompok-3-pemrograman" di terminal.
 
 Panduan Menjalankan:
 -Buka folder yang sudah di install sebelumnya Bernama kelompok-3-pemrograman di Visual Studio Code
@@ -48,7 +48,7 @@ flowchart TD
     Nilai >= 85: A
     NIlai >= 70: B
     Nilai >= 50: C
-    Else: 50"]
+    Else: D"]
     K -->|Balik ke Memilih Opsi| B
     E --> L[Menunjukkan Nama Siswa, Nilai rata-rata, serta Grade Siswa.]
     L --> M{Apakah ada nilai siswa?}
