@@ -19,6 +19,7 @@ Panduan Instalasi :
 Panduan Menjalankan:
 - Buka folder yang sudah di install sebelumnya Bernama kelompok-3-pemrograman di Visual Studio Code
 - Ketik "python main.py" pada terminal, dan akan muncul menu ini:
+
 === MENU UTAMA ===
 1. Tambah Data Siswa
 2. Lihat Data Siswa
