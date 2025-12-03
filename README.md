@@ -14,13 +14,11 @@ Panduan Instalasi :
 -Buka Visual Studio Code
 -Buka Folder tempat yang di inginkan untuk menyimpan repositori 
 -Buka Terminal pada VsCode 
--kemudian ketik 'git clone [URL repositori]' beserta link repositorinya  'git clone https://github.com/ren27r/kelompok-3-pemrograman' kemudian jalankan 
--File program kemudian akan otomatis terinstall ke folder
+-kemudian ketik ''git clone https://github.com/ren27r/kelompok-3-pemrograman" di terminal.
 
 Panduan Menjalankan:
 -Buka folder yang sudah di install sebelumnya Bernama kelompok-3-pemrograman di Visual Studio Code
--Kemudian klik file yang Bernama 'main.py' ini adalah menu Utama dari program 
--Run atau jalankan file tersebut akan muncul menu seperti ini 
+-Ketik "python main.py" pada terminal, dan akan muncul menu ini:
 === MENU UTAMA ===
 1. Tambah Data Siswa
 2. Lihat Data Siswa
@@ -29,7 +27,41 @@ Pilih menu (1/2/3):
 	
 ketik pada terminal dari angka 1-3 untuk memilih menu yang kalian inginkan misalnya ketik '1' pada terminal lalu enter untuk membuka menu tambah data
 
--Pada menu 1 program akan meminta untuk menginput data yaitu 'Nama Siswa' masukan nama, 'Nilai tugas' masukan nilai tugas berupa angka, 'Nilai ujian' masukan nilai ujian berupa angka,
--Setelah mengisi data  program akan Kembali ke menu Utama
--Kemudian setelah itu anda dapat  mengetikk '2' pada terminal lalu enter untuk melihat data yang telah anda masukan kemudian setelah itu program akan Kembali lagi ke menu Utama
--Yang terakhir ketik '3' pada terminal kemudian program akan menyimpan data dan keluar dari program 
+-Menu "1" akan meminta anda untuk menginput data Nama siswa, Nilai Tugas, dan Nilai Ujian.
+-Menu "2" akan melihatkan Nama Siswa, Nilai Rata-Rata, dan Grade (A,B,C, dan D), jika belum ada data yang dimasukkan sebelumnya, program akan memberikan output "Belum ada data siswa."
+-Menu "3" akan mengeluarkan anda dari program.
+
+
+Dokumentasi Teknis (flowchart):
+```mermaid
+flowchart TD
+    A([Start]) --> B{Memilih Opsi}
+    B -->|1| D[Tambah Data]
+    B -->|2| E[Lihat Data]
+    B -->|3| F[Simpan dan Keluar]
+    D --> G[/Masukan Nama Siswa/]
+    G --> H[/Masukan Nilai Tugas/]
+    H --> I[/Masukan Nilai Ujian/]
+    I --> J["Mendapatkan Nilai rata-rata:
+    (Nilai Tugas + Nilai Ujian)/2 "]
+    J --> K["Memberikan grade kepada siswa:
+    Nilai >= 85: A
+    NIlai >= 70: B
+    Nilai >= 50: C
+    Else: 50"]
+    K -->|Balik ke Memilih Opsi| B
+    E --> L[Menunjukkan Nama Siswa, Nilai rata-rata, serta Grade Siswa.]
+    L --> M{Apakah ada nilai siswa?}
+    M -->|Ya| N[Menunjukkan nilai siswa yang ada]
+    M -->|Tidak| O["Output mengeluarkan: 'Belum ada data siswa'"]
+    N -->|Balik ke Memilih Opsi| B
+    O -->|Balik ke Memilih Opsi| B
+    F --> P([End])
+```
+
+Daftar Kontributor:
+| Nama                           | NIM          | Link Akun                                |
+| ------------------------------ | ------------ | ---------------------------------------- |
+| Rendy                          | 250211060046 | https://github.com/ren27r                |
+| Gilbert Christian Kennedy Ulag | 250211060060 | https://github.com/Gilbert2669           |
+| Victoria Princella Grace Musu  | 250211060050 | https://github.com/victoriamusu026-maker |
